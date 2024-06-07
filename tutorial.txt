@@ -2,3 +2,22 @@ Tutorial electron
 
 1) Iniciar um novo projeto node
     npm init
+
+(seguir a documentação)
+
+2) Criar uma estrutura de pastas 
+utilizando um MVC (modelo de camadas)
+src
+|---- views
+        |--- index.html
+|---- public
+        |--- css
+        |--- img
+        |--- js
+
+3) personalização da janela
+    - dimenções
+    - redimensionamento
+    - cor
+    - ícone
+    
