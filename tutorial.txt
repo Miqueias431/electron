@@ -20,4 +20,16 @@ src
     - redimensionamento
     - cor
     - ícone
-    
+    - menu e barra de titulo
+
+4) Personalização do menu
+template -> estrutura de dados
+Passo 1: importar o recurso Menu e criar o template
+Passo 2: exibir o template no lugar do menu original
+
+Obs: algins recursos precisam ser importados:
+Exemplo: Acesso a links externos
+shell
+
+Obs2: O shell é utilizado no main para acessar recursos externos
+(links)
