@@ -91,7 +91,11 @@ const template = [
     submenu: [
       {
         label: 'docs',
+        accelerator: 'Alt+F1',
         click: () => shell.openExternal('https://www.electronjs.org/docs/latest/')
+      },
+      {
+        type: 'separator'
       },
       {
         label: 'Sobre',
