@@ -66,3 +66,17 @@ Obs2: O shell é utilizado no main para acessar recursos externos
                       preload.js 
                           |
     Fluxo: ipcRenderer -> hello() ->  main.js (ipcMain)
+
+_______________________________________________________
+    Uso de frameworks (front-end) no electron
+- bootstrap
+     |____ local (download)
+
+Passo 1: Fazer o download do css e js compilado
+Passo 2: Descompactar e copiar o bootstrap.min.css e bootstrap.min.js para a pasta public
+Passo 3: Link com o documento html
+
+Para usar o bootstrap seguir a documentação:
+Dica: 
+O bootstrap trabalha com conceitos de classes
+Inicie criando um container (div.container)

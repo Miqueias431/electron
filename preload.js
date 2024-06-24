@@ -22,5 +22,5 @@ function obterData() {
 
 // Interagir diretamente no DOM do documento html (index.html)
 window.addEventListener('DOMContentLoaded', () =>{
-    const dataAtual = document.getElementById('id').innerHTML = obterData()
+    const dataAtual = document.getElementById('dataAtual').innerHTML = obterData()
 })

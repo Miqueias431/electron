@@ -118,7 +118,7 @@ const template = [
 console.log("Processo Principal")
 // Exemplo 1: Comando que só funciona no node.js
 console.log(`Electron: ${process.versions.electron}`)
-// Exemplo 2: Rebimento de uma mensagem do renderer
+// Exemplo 2: Recebimento de uma mensagem do renderer
 ipcMain.on('send-message', (event, message) => {
   console.log(`Processo principal recebeu uma mensagem: ${message}`)
   event.returnValue = 'oi!'
