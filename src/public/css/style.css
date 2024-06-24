@@ -24,3 +24,22 @@ footer p {
     color: #fff;
     margin: 12px 0;
 }
+
+.ok {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #d9d2d2;
+    width: 100%;
+    padding: 5px 0 ;
+}
+
+.okbtn {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 1px 25px;
+    background-color: #d3d3d3;
+    border: gray solid 1px;
+    color: #000;
+}
