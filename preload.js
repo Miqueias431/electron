@@ -3,11 +3,12 @@ const {contextBridge, ipcRenderer} = require('electron')
 // Gerenciamento de processos (desempenho e segurança)
 contextBridge.exposeInMainWorld('api', {
     verElectron: () => process.versions.electron ,
-    hello: () => ipcRenderer.send('send-message', "Oi!"),
+    hello: (message) => ipcRenderer.send('send-message', message),
+    answer: (message) => ipcRenderer.on('receive-message', message),
     openAbout: () => ipcRenderer.send('open-about')
 })
 
-// Inserir data na pagina
+// Inserir data na pagina (Pré carregamento)
 function obterData() {
     const data = new Date()
     const options = {

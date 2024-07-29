@@ -6,7 +6,16 @@ console.log("Processo de renderização")
 
 // Vinculado ao preload.js
 console.log(`Electron: ${api.verElectron()}`)
-api.hello()
+
+// Envio de uma mensagem
+api.hello("Oi!")
+
+// Recebimento de uma mensagem
+api.answer((event,message) => {
+
+    console.log(`O processo de renderização recebeu uma mensagem: ${message}`)
+    
+})
 
 // Função que é execultada quando o botão for clicado
 function sobre() {

@@ -81,10 +81,24 @@ Dica:
 O bootstrap trabalha com conceitos de classes
 Inicie criando um container (div.container)
 
-_______________________________________________________
+__________________________________________________________________
 Relação entre janelas (parent-child) e modal
 - Foco do usuário no sistema
 - Segurança e desempenho
 
 Passo 1: Determinar a janela pai (principal)
 Passo 2: Criar o relacionamento entres as janelas
+
+__________________________________________________________________
+
+IPC - Comumicação segura entre processos
+
+ipMain (main.js)
+      || ---------------------- preload.js
+ipcRenderer (renderer.js)
+
+Obs: 
+1) main.js (processo principal e único)
+2) renderer.js (processo de renderização e múltiplos)
+    - Podem existir vários processos de renderização
+    - Renderer.js (nome atribuído - você pode escolher qualquer nome)
