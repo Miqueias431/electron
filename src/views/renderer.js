@@ -22,5 +22,17 @@ function sobre() {
     api.openAbout()
 }
 
+// Dialogs (caixas de mensagens)
+function info() {
+    api.info()
+}
+
+function warming() {
+    api.warming()
+}
+
+function select() {
+    api.select()
+}
 
 

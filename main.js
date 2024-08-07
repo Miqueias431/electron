@@ -153,3 +153,40 @@ ipcMain.on('send-message', (event, message) => {
 ipcMain.on('open-about', () => {
   aboutWindow()
 })
+// Dialogs >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Caixa simples de mensagem
+ipcMain.on('dialog-info', () => {
+  dialog.showMessageBox({
+      type: 'info',
+      title: "Título da messagem",
+      message: "Mensagem",
+      buttons: ["OK",]
+  })
+})
+
+// Caixa de confirmação
+ipcMain.on('dialog-warming', () => {
+  dialog.showMessageBox({
+      type: 'warming',
+      title: "Atenção!",
+      message: "Confirma a exclusão deste registro?",
+      buttons: ["Sim", "Não"],
+      defaultId: 0
+  }).then((result) =>{
+      console.log(result)
+
+      if (result.response === 0) {
+        console.log("Registro excluido com sucesso")  
+      }
+  })
+})
+
+// Explorador de arquivos
+ipcMain.on('dialog-select', () => {
+  dialog.showOpenDialog({
+      properties: ['openDirectory']
+  }).then((result) => {
+      console.log(result)
+  })
+})
